@@ -35,7 +35,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
                 }]
             }}
                 options={{
-                    scales: { xAxes: [{ gridLines: { display: false } }], yAxes: [{ gridLines: { display: false } }] }
+                    scales: { xAxes: [{ gridLines: { display: true } }], yAxes: [{ gridLines: { display: true } }] }
                 }}
             />) : null
     );
