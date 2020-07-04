@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './App.module.css'
 import { Cards, Charts, CountryPicker } from './Components'
-import { fetchData } from './API';//we dont have to specify index file name if your file name is index  
+import { fetchData } from './API';
 import coronaImage from './Images/Cov19.png';
 class App extends React.Component {
     state = {
@@ -10,7 +10,6 @@ class App extends React.Component {
     }
     async componentDidMount() {
         const data = await fetchData();
-        //console.log(fetchedData);  
         this.setState({ data });
     }
 
